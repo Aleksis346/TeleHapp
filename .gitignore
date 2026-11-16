@@ -1,0 +1,41 @@
+﻿# IDE / Gradle / build
+.idea/
+.gradle/
+build/
+.cxx/
+captures/
+obj/
+
+# Local config and secrets
+local.properties
+**/local.properties
+*.jks
+*.keystore
+google-services.json
+**/google-services.json
+
+# App artifacts and logs
+*.apk
+*.aab
+*.iml
+*.log
+*.bak
+*.orig
+*.tmp
+
+# OS / temp
+.DS_Store
+**/.DS_Store
+Thumbs.db
+
+# Native/build outputs
+TMessagesProj/.cxx/
+TMessagesProj/jniLibs/
+TMessagesProj/jniRes/
+TMessagesProj/afat/
+TMessagesProj_App/afat/
+TMessagesProj_AppHockeyApp/afat/
+TMessagesProj_AppStandalone/afat/
+TMessagesProj_AppHuawei/afat/
+TMessagesProj/jni/ffmpeg/build_android
+TMessagesProj_App/build/
