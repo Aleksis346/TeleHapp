@@ -1,0 +1,11 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="20.408922dp" android:viewportHeight="61" android:viewportWidth="269" android:width="90dp">
+    <!-- TeleHapp wordmark -->
+    <path android:fillColor="#FFFFFFFF" android:fillType="nonZero" android:pathData="M0,9h34v8H22v29h-9V17H0V9z"/>
+    <path android:fillColor="#FFFFFFFF" android:fillType="nonZero" android:pathData="M38,22c0,-8 6,-13 14,-13s14,5 14,14v3H47c1,4 4,6 8,6c3,0 6,-1 7,-3l6,4c-3,4 -8,6 -13,6c-10,0 -17,-6 -17,-17zM47,21h11c-1,-4 -3,-5 -6,-5s-4,2 -5,5z"/>
+    <path android:fillColor="#FFFFFFFF" android:fillType="nonZero" android:pathData="M71,9h8v37h-8V9z"/>
+    <path android:fillColor="#FFFFFFFF" android:fillType="nonZero" android:pathData="M85,22c0,-8 6,-13 14,-13s14,5 14,14v3H94c1,4 4,6 8,6c3,0 6,-1 7,-3l6,4c-3,4 -8,6 -13,6c-10,0 -17,-6 -17,-17zM94,21h11c-1,-4 -3,-5 -6,-5s-4,2 -5,5z"/>
+    <path android:fillColor="#FFFFFFFF" android:fillType="nonZero" android:pathData="M119,9h8v15c2,-2 5,-4 10,-4c7,0 12,5 12,13v13h-8V34c0,-4 -2,-6 -6,-6s-7,2 -8,7v11h-8V9z"/>
+    <path android:fillColor="#FFFFFFFF" android:fillType="nonZero" android:pathData="M154,27c0,-11 6,-18 16,-18c4,0 7,2 9,4v-3h9v36h-9v-3c-2,3 -5,4 -9,4c-10,0 -16,-8 -16,-20zM163,27c0,7 3,12 9,12s8,-5 8,-12s-3,-12 -8,-12s-9,4 -9,12z"/>
+    <path android:fillColor="#FFFFFFFF" android:fillType="nonZero" android:pathData="M194,10h9v3c2,-3 5,-4 9,-4c10,0 16,7 16,18s-6,20 -16,20c-4,0 -7,-1 -9,-4v18h-9V10zM203,27c0,8 3,12 9,12s8,-5 8,-12s-3,-12 -8,-12s-9,4 -9,12z"/>
+    <path android:fillColor="#FFFFFFFF" android:fillType="nonZero" android:pathData="M234,10h9v3c2,-3 5,-4 9,-4c10,0 16,7 16,18s-6,20 -16,20c-4,0 -7,-1 -9,-4v18h-9V10zM243,27c0,8 3,12 9,12s8,-5 8,-12s-3,-12 -8,-12s-9,4 -9,12z"/>
+</vector>
