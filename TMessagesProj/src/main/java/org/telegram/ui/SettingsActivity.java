@@ -1042,6 +1042,7 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
     }
 
     public String getVersionName() {
+        String versionInfo = "";
         try {
             PackageInfo pInfo = ApplicationLoader.applicationContext.getPackageManager().getPackageInfo(ApplicationLoader.applicationContext.getPackageName(), 0);
             int code = pInfo.versionCode / 10;
@@ -1060,16 +1061,23 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                     }
                     break;
             }
-            String versionInfo = String.format(Locale.US, "v%s (%d)\n%s", pInfo.versionName, code, abi);
-            try {
-                return getContext() != null ? getContext().getString(R.string.TelegramVersion, versionInfo) : ApplicationLoader.applicationContext.getString(R.string.TelegramVersion, versionInfo);
-            } catch (Exception ignore) {
-                return ApplicationLoader.applicationContext.getString(R.string.TelegramVersion, versionInfo);
-            }
+            versionInfo = String.format(Locale.US, "v%s (%d)\n%s", pInfo.versionName, code, abi);
         } catch (Exception e) {
             FileLog.e(e);
         }
-        return null;
+
+        try {
+            Context ctx = getContext() != null ? getContext() : ApplicationLoader.applicationContext;
+            if (ctx != null) {
+                return ctx.getString(R.string.TelegramVersion, versionInfo);
+            }
+        } catch (Throwable ignore) {
+        }
+
+        if (LocaleController.isRTL || "ru".equalsIgnoreCase(LocaleController.getInstance().getCurrentLocaleInfo().getLangCode())) {
+            return "TeleHapp для Android (на базе Telegram API) " + versionInfo;
+        }
+        return "TeleHapp for Android (Telegram API) " + versionInfo;
     }
 
     @Override
