@@ -127,6 +127,7 @@ import org.telegram.messenger.NotificationsController;
 import org.telegram.messenger.R;
 import org.telegram.messenger.SharedConfig;
 import org.telegram.messenger.UserConfig;
+import org.telegram.messenger.TeleHappConfig;
 import org.telegram.messenger.UserObject;
 import org.telegram.messenger.Utilities;
 import org.telegram.messenger.XiaomiUtilities;
@@ -6937,6 +6938,13 @@ public class DialogsActivity extends BaseFragment implements NotificationCenter.
     @Override
     public void onResume() {
         super.onResume();
+        try {
+            if (actionBar != null && folderId == 0 && communityId == 0 && !onlySelect) {
+                actionBar.setTitle(getTeleHappDialogsTitle(), statusDrawable);
+                applyTeleHappPremiumDesign();
+            }
+        } catch (Throwable ignore) {
+        }
         if (dialogStoriesCell != null) {
             dialogStoriesCell.onResume();
         }
@@ -14380,5 +14388,36 @@ public class DialogsActivity extends BaseFragment implements NotificationCenter.
         keys.add(Theme.key_dialogButtonSelector);
         keys.add(Theme.key_actionBarDefaultSubmenuItem);
         keys.add(Theme.key_actionBarDefaultSubmenuBackground);
+    }
+
+    private String getTeleHappDialogsTitle() {
+        try {
+            return TeleHappConfig.getDialogsTitle();
+        } catch (Throwable ignore) {
+            return "TeleHapp";
+        }
+    }
+
+    private void applyTeleHappPremiumDesign() {
+        try {
+            if (actionBar == null || folderId != 0 || communityId != 0 || onlySelect) {
+                return;
+            }
+            boolean premiumStyle = TeleHappConfig.isCustomFeaturesEnabled()
+                    && TeleHappConfig.isUsePremiumDesign()
+                    && UserConfig.getInstance(currentAccount).isPremium();
+            if (premiumStyle) {
+                actionBar.setBackgroundColor(0xFF1F2C34);
+                actionBar.setTitleColor(0xFFFFFFFF);
+                actionBar.setItemsColor(0xFFFFFFFF, false);
+                actionBar.setItemsBackgroundColor(0x33FFFFFF, false);
+            } else {
+                actionBar.setBackgroundColor(Theme.getColor(Theme.key_actionBarDefault));
+                actionBar.setTitleColor(Theme.getColor(Theme.key_actionBarDefaultTitle));
+                actionBar.setItemsColor(Theme.getColor(Theme.key_actionBarDefaultIcon), false);
+                actionBar.setItemsBackgroundColor(Theme.getColor(Theme.key_actionBarDefaultSelector), false);
+            }
+        } catch (Throwable ignore) {
+        }
     }
 }

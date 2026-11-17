@@ -18,7 +18,7 @@
                     <path
                         android:name="circle"
                         android:pathData="M 160 110 C 146.744 110 134.018 115.271 124.645 124.645 C 115.271 134.018 110 146.744 110 160 C 110 173.256 115.271 185.982 124.645 195.355 C 134.018 204.729 146.744 210 160 210 C 173.256 210 185.982 204.729 195.355 195.355 C 204.729 185.982 210 173.256 210 160 C 210 146.744 204.729 134.018 195.355 124.645 C 185.982 115.271 173.256 110 160 110 Z"
-                        android:fillColor="#00897B"
+                        android:fillColor="#5E35B1"
                         android:fillAlpha="0"
                         android:strokeWidth="1"/>
                 </group>
@@ -26,22 +26,21 @@
                     android:name="fg"
                     android:pivotX="160"
                     android:pivotY="160"
-                    android:scaleX="2"
-                    android:scaleY="2">
+                    android:scaleX="1"
+                    android:scaleY="1">
                     <clip-path
                         android:name="mask"
                         android:pathData="M 160 60 C 133.489 60 108.036 70.543 89.289 89.289 C 70.543 108.036 60 133.489 60 160 C 60 186.511 70.543 211.964 89.289 230.711 C 108.036 249.457 133.489 260 160 260 C 186.511 260 211.964 249.457 230.711 230.711 C 249.457 211.964 260 186.511 260 160 C 260 133.489 249.457 108.036 230.711 89.289 C 211.964 70.543 186.511 60 160 60 Z"/>
-                    <!-- TeleHapp mark: plane + H -->
                     <group android:name="plane" android:translateX="106" android:translateY="106">
-                        <group android:translateX="8" android:translateY="10" android:scaleX="0.78" android:scaleY="0.78">
-                            <path
-                                android:pathData="M30.3652 44.5699C38.1874 41.1615 43.4013 38.9115 46.0124 37.8254C53.4624 34.7226 55.0096 34.1838 56.0179 34.1671C56.2402 34.1643 56.7374 34.2171 57.0596 34.4782C57.329 34.7004 57.404 34.9976 57.4402 35.206C57.4763 35.4143 57.5207 35.8921 57.4846 36.2643C57.0818 40.5088 55.3346 50.8143 54.4457 55.5699C54.0707 57.581 53.329 58.256 52.6124 58.3227C51.054 58.4643 49.8707 57.2921 48.3624 56.3004C46.0013 54.7532 44.6679 53.7865 42.3763 52.2754C39.7263 50.5282 41.4429 49.5699 42.954 48.0004C43.3485 47.5893 50.2124 41.3393 50.3457 40.7726C50.3624 40.7004 50.3763 40.4365 50.2207 40.2977C50.0624 40.1588 49.8318 40.206 49.6652 40.2449C49.429 40.2977 45.6568 42.7921 38.3485 47.731C37.279 48.4671 36.3068 48.8254 35.4402 48.806C34.4818 48.7865 32.6374 48.2643 31.2679 47.8171C29.5874 47.2726 28.5013 46.9893 28.6179 46.0615C28.679 45.5782 29.2624 45.081 30.3652 44.5699Z"
-                                android:fillColor="#FFFFFF"
-                                android:fillType="evenOdd"/>
-                        </group>
                         <path
-                            android:pathData="M60,33h8c1.657,0 3,1.343 3,3v11h8V36c0,-1.657 1.343,-3 3,-3h8c1.657,0 3,1.343 3,3v36c0,1.657 -1.343,3 -3,3h-8c-1.657,0 -3,-1.343 -3,-3V59h-8v13c0,1.657 -1.343,3 -3,3h-8c-1.657,0 -3,-1.343 -3,-3V36c0,-1.657 1.343,-3 3,-3z"
-                            android:fillColor="#E9FFF9"/>
+                            android:fillColor="#33FFFFFF"
+                            android:pathData="M54,24 C39,28 32,36 32,46 V58 C32,70 42,79 54,84 C66,79 76,70 76,58 V46 C76,36 69,28 54,24 Z"/>
+                        <path
+                            android:fillColor="#FFFFFF"
+                            android:pathData="M41,40 h6 a2.5,2.5 0 0 1 2.5,2.5 v6.5 h9 v-6.5 a2.5,2.5 0 0 1 2.5,-2.5 h6 a2.5,2.5 0 0 1 2.5,2.5 v23 a2.5,2.5 0 0 1 -2.5,2.5 h-6 a2.5,2.5 0 0 1 -2.5,-2.5 v-6.5 h-9 v6.5 a2.5,2.5 0 0 1 -2.5,2.5 h-6 a2.5,2.5 0 0 1 -2.5,-2.5 v-23 a2.5,2.5 0 0 1 2.5,-2.5 z"/>
+                        <path
+                            android:fillColor="#26A69A"
+                            android:pathData="M63,44 L72,35 L67.5,35 a1.5,1.5 0 0 1 0,-3 h8 a1.5,1.5 0 0 1 1.5,1.5 v8 a1.5,1.5 0 0 1 -3,0 V37 L65,46 a1.5,1.5 0 1 1 -2,-2 z"/>
                     </group>
                 </group>
             </group>
@@ -50,21 +49,12 @@
     <target android:name="circle">
         <aapt:attr name="android:animation">
             <set>
-                <objectAnimator
-                    android:propertyName="pathData"
-                    android:startOffset="200"
-                    android:duration="300"
+                <objectAnimator android:propertyName="pathData" android:startOffset="200" android:duration="300"
                     android:valueFrom="M 160 110 C 146.744 110 134.018 115.271 124.645 124.645 C 115.271 134.018 110 146.744 110 160 C 110 173.256 115.271 185.982 124.645 195.355 C 134.018 204.729 146.744 210 160 210 C 173.256 210 185.982 204.729 195.355 195.355 C 204.729 185.982 210 173.256 210 160 C 210 146.744 204.729 134.018 195.355 124.645 C 185.982 115.271 173.256 110 160 110 Z"
                     android:valueTo="M 160 60 C 133.489 60 108.036 70.543 89.289 89.289 C 70.543 108.036 60 133.489 60 160 C 60 186.511 70.543 211.964 89.289 230.711 C 108.036 249.457 133.489 260 160 260 C 186.511 260 211.964 249.457 230.711 230.711 C 249.457 211.964 260 186.511 260 160 C 260 133.489 249.457 108.036 230.711 89.289 C 211.964 70.543 186.511 60 160 60 Z"
-                    android:valueType="pathType"
-                    android:interpolator="@android:anim/overshoot_interpolator"/>
-                <objectAnimator
-                    android:propertyName="fillAlpha"
-                    android:startOffset="200"
-                    android:duration="100"
-                    android:valueFrom="0"
-                    android:valueTo="1"
-                    android:valueType="floatType"
+                    android:valueType="pathType" android:interpolator="@android:anim/overshoot_interpolator"/>
+                <objectAnimator android:propertyName="fillAlpha" android:startOffset="200" android:duration="100"
+                    android:valueFrom="0" android:valueTo="1" android:valueType="floatType"
                     android:interpolator="@android:interpolator/fast_out_slow_in"/>
             </set>
         </aapt:attr>
@@ -72,21 +62,11 @@
     <target android:name="plane">
         <aapt:attr name="android:animation">
             <set>
-                <objectAnimator
-                    android:propertyName="translateX"
-                    android:startOffset="250"
-                    android:duration="350"
-                    android:valueFrom="140"
-                    android:valueTo="106"
-                    android:valueType="floatType"
+                <objectAnimator android:propertyName="translateX" android:startOffset="250" android:duration="350"
+                    android:valueFrom="140" android:valueTo="106" android:valueType="floatType"
                     android:interpolator="@android:interpolator/fast_out_slow_in"/>
-                <objectAnimator
-                    android:propertyName="translateY"
-                    android:startOffset="250"
-                    android:duration="350"
-                    android:valueFrom="140"
-                    android:valueTo="106"
-                    android:valueType="floatType"
+                <objectAnimator android:propertyName="translateY" android:startOffset="250" android:duration="350"
+                    android:valueFrom="140" android:valueTo="106" android:valueType="floatType"
                     android:interpolator="@android:interpolator/fast_out_slow_in"/>
             </set>
         </aapt:attr>
@@ -94,37 +74,17 @@
     <target android:name="scaleme">
         <aapt:attr name="android:animation">
             <set>
-                <objectAnimator
-                    android:propertyName="scaleX"
-                    android:startOffset="0"
-                    android:duration="250"
-                    android:valueFrom="1"
-                    android:valueTo="0.9"
-                    android:valueType="floatType"
+                <objectAnimator android:propertyName="scaleX" android:startOffset="0" android:duration="250"
+                    android:valueFrom="1" android:valueTo="0.9" android:valueType="floatType"
                     android:interpolator="@android:interpolator/fast_out_slow_in"/>
-                <objectAnimator
-                    android:propertyName="scaleY"
-                    android:startOffset="0"
-                    android:duration="250"
-                    android:valueFrom="1"
-                    android:valueTo="0.9"
-                    android:valueType="floatType"
+                <objectAnimator android:propertyName="scaleY" android:startOffset="0" android:duration="250"
+                    android:valueFrom="1" android:valueTo="0.9" android:valueType="floatType"
                     android:interpolator="@android:interpolator/fast_out_slow_in"/>
-                <objectAnimator
-                    android:propertyName="scaleX"
-                    android:startOffset="250"
-                    android:duration="350"
-                    android:valueFrom="0.9"
-                    android:valueTo="1"
-                    android:valueType="floatType"
+                <objectAnimator android:propertyName="scaleX" android:startOffset="250" android:duration="350"
+                    android:valueFrom="0.9" android:valueTo="1" android:valueType="floatType"
                     android:interpolator="@android:anim/overshoot_interpolator"/>
-                <objectAnimator
-                    android:propertyName="scaleY"
-                    android:startOffset="250"
-                    android:duration="350"
-                    android:valueFrom="0.9"
-                    android:valueTo="1"
-                    android:valueType="floatType"
+                <objectAnimator android:propertyName="scaleY" android:startOffset="250" android:duration="350"
+                    android:valueFrom="0.9" android:valueTo="1" android:valueType="floatType"
                     android:interpolator="@android:anim/overshoot_interpolator"/>
             </set>
         </aapt:attr>

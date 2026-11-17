@@ -207,6 +207,66 @@
             <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts" />
         </activity-alias>
 
+        <activity-alias
+            android:enabled="false"
+            android:name="org.telegram.messenger.MemeIcon1"
+            android:targetActivity="org.telegram.ui.LaunchActivity"
+            android:icon="@drawable/ic_launcher_meme_1"
+            android:roundIcon="@drawable/ic_launcher_meme_1"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER" />
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts" />
+        </activity-alias>
+
+        <activity-alias
+            android:enabled="false"
+            android:name="org.telegram.messenger.MemeIcon2"
+            android:targetActivity="org.telegram.ui.LaunchActivity"
+            android:icon="@drawable/ic_launcher_meme_2"
+            android:roundIcon="@drawable/ic_launcher_meme_2"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER" />
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts" />
+        </activity-alias>
+
+        <activity-alias
+            android:enabled="false"
+            android:name="org.telegram.messenger.MemeIcon3"
+            android:targetActivity="org.telegram.ui.LaunchActivity"
+            android:icon="@drawable/ic_launcher_meme_3"
+            android:roundIcon="@drawable/ic_launcher_meme_3"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER" />
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts" />
+        </activity-alias>
+
+        <activity-alias
+            android:enabled="false"
+            android:name="org.telegram.messenger.MemeIcon4"
+            android:targetActivity="org.telegram.ui.LaunchActivity"
+            android:icon="@drawable/ic_launcher_meme_4"
+            android:roundIcon="@drawable/ic_launcher_meme_4"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER" />
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts" />
+        </activity-alias>
+
         <activity
             android:name="org.telegram.ui.LaunchActivity"
             android:theme="@style/Theme.TMessages.Start"
