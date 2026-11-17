@@ -172,7 +172,12 @@ public class ApplicationLoader extends Application {
         } catch (Exception e) {
             FileLog.e(e);
         }
-        return new File("/data/data/org.telegram.messenger/files");
+        try {
+            return new File("/data/data/" + ApplicationLoader.applicationContext.getPackageName() + "/files");
+        } catch (Exception e) {
+            FileLog.e(e);
+        }
+        return new File("/data/data/com.telehapp.messenger/files");
     }
 
     public static File getFilesDirFixed(String child) {

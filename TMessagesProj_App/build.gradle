@@ -39,6 +39,7 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
 
         coreLibraryDesugaringEnabled true
+        encoding = "UTF-8"
     }
 
     androidResources {
@@ -194,4 +195,18 @@ android {
     }
 }
 
-apply plugin: 'com.google.gms.google-services'
+def googleServicesFile = file("google-services.json")
+if (googleServicesFile.exists()) {
+    try {
+        def json = googleServicesFile.getText('UTF-8')
+        if (json.contains(APP_PACKAGE) || json.contains(APP_PACKAGE + ".beta") || json.contains("com.telehapp.messenger") || json.contains("com.telehapp.messenger.beta")) {
+            apply plugin: 'com.google.gms.google-services'
+        } else {
+            logger.lifecycle("google-services.json does not contain ${APP_PACKAGE} / ${APP_PACKAGE}.beta; skipping com.google.gms.google-services plugin.")
+        }
+    } catch (Throwable ignored) {
+        logger.lifecycle("Unable to read google-services.json; skipping com.google.gms.google-services plugin.")
+    }
+} else {
+    logger.lifecycle("google-services.json not found; skipping com.google.gms.google-services plugin.")
+}

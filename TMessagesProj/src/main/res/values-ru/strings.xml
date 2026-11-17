@@ -2,6 +2,7 @@
 <resources>
     <string name="AppName">TeleHapp</string>
     <string name="AppNameBeta">TeleHapp Beta</string>
+    <string name="TelegramVersion">TeleHapp для Android (на базе Telegram API) %1$s</string>
     <string name="LanguageName">Русский</string>
     <string name="English">Английский</string>
     <string name="LanguageNameInEnglish">Russian</string>
