@@ -6,8 +6,8 @@
 
 ## Скачать / Download
 
-* **RU:** Готовый установочный файл (`TeleHapp-42.0.0.apk`) доступен в разделе Releases.
-* **EN:** Ready-to-install APK (`TeleHapp-42.0.0.apk`) is available on the Releases page.
+* **RU:** Готовый установочный файл (`TeleHapp-42.0.0.apk`) доступен в разделе **[Releases]**.
+* **EN:** Ready-to-install APK (`TeleHapp-42.0.0.apk`) is available on the **[Releases]** page.
 
 ## Дисклеймер / Disclaimer
 
@@ -55,3 +55,4 @@ TELEGRAM_APP_HASH=your_api_hash_here
 
 * **RU:** Этот проект распространяется на условиях **GNU General Public License v2.0 (GNU GPL v2)**. См. файл `LICENSE`. Проект основан на исходном коде [Telegram for Android](https://github.com) и содержит модификации TeleHapp.
 * **EN:** This project is licensed under the **GNU General Public License v2.0 (GNU GPL v2)**. See the `LICENSE` file. This project is based on the [Telegram for Android](https://github.com) source code and includes TeleHapp modifications.
+
