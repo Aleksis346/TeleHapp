@@ -1060,7 +1060,12 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                     }
                     break;
             }
-            return formatString(R.string.TelegramVersion, String.format(Locale.US, "v%s (%d)\n%s", pInfo.versionName, code, abi));
+            String versionInfo = String.format(Locale.US, "v%s (%d)\n%s", pInfo.versionName, code, abi);
+            try {
+                return getContext() != null ? getContext().getString(R.string.TelegramVersion, versionInfo) : ApplicationLoader.applicationContext.getString(R.string.TelegramVersion, versionInfo);
+            } catch (Exception ignore) {
+                return ApplicationLoader.applicationContext.getString(R.string.TelegramVersion, versionInfo);
+            }
         } catch (Exception e) {
             FileLog.e(e);
         }
