@@ -6,8 +6,8 @@
 
 ## Скачать / Download
 
-* **RU:** Готовый установочный файл (`TeleHapp-42.0.0.apk`) доступен в разделе **[Releases](https://github.com)**.
-* **EN:** Ready-to-install APK (`TeleHapp-42.0.0.apk`) is available on the **[Releases](https://github.com)** page.
+* **RU:** Готовый установочный файл (`TeleHapp-42.0.0.apk`) доступен в разделе Releases.
+* **EN:** Ready-to-install APK (`TeleHapp-42.0.0.apk`) is available on the Releases page.
 
 ## Дисклеймер / Disclaimer
 
